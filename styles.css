@@ -30,7 +30,7 @@ body {
   -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  font-size: 1.3em;  
+  font-size: 1.3em;
 }
 
 input {
@@ -68,17 +68,17 @@ input:focus::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
 }
 
 .datesrow {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
   padding: 25px 0;
 }
 
-.mintemprow, .maxtemprow{
+.mintemprow,
+.maxtemprow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
@@ -86,5 +86,4 @@ input:focus::placeholder {
 }
 
 .maxtempday1 {
-
 }

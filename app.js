@@ -2,6 +2,7 @@ let city = document.getElementById('city');
 let temp = document.getElementById('temp');
 let wind = document.getElementById('wind');
 let humidity = document.getElementById('humidity');
+let pressure = document.getElementById('pressure');
 
 
 fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=64d27e418c94ae459b8862f6019c05eb')
@@ -12,5 +13,6 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=64d27e4
   .then(() => temp.innerHTML = "Temperature: " + (parseInt(obj.main.temp) - 273) + "&#8451")
   .then(() => wind.innerHTML = "Wind: " + obj.wind.speed + " m/s")
   .then(() => humidity.innerHTML = "Humidity: " + obj.main.humidity + " %")
+  .then(() => pressure.innerHTML = "Humidity: " + obj.main.pressure + " mbar")
 
 
